@@ -60,7 +60,6 @@ pkg: $(BUILD)
 	@mkdir -p $(BUILD)/pkg
 	@mkdir -p $(BUILD)/pkg/USRDIR
 	@cp $(ICON0) $(BUILD)/pkg/
-	@cp $(BUILD)/../$(TARGET).self $(BUILD)/pkg/RELOAD.SELF
 	#@$(FSELF) -n $(BUILD)/$(TARGET).elf $(BUILD)/pkg/USRDIR/EBOOT.BIN
 	@$(SELF_NPDRM) $(BUILD)/$(TARGET).elf $(BUILD)/pkg/USRDIR/EBOOT.BIN $(CONTENTID)
 	@$(SFO) -f $(SFOXML) $(BUILD)/pkg/PARAM.SFO
