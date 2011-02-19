@@ -13,9 +13,10 @@ DATA		:=	data
 LIBS		:=	 $(PSL1GHT)/modules/spu_soundmodule.bin.a \
 				-lspu_sound -laudioplayer -lmpg123 -logg -laudio -ltiny3d -lgcm_sys -lreality -lsysutil -lio -lpngdec -lsysmodule -lm
 
-TITLE		:=	Pintor - fail0verflow
+ICON0       = $(SOURCE)/../ICON0.PNG
 APPID		:=	PINTOR001
 CONTENTID	:=	UP0001-$(APPID)_00-0000000000000000
+SFOXML		:=	package.xml
 
 CFLAGS		+= -g -O2 -Wall --std=gnu99
 CXXFLAGS	+= -g -O2 -Wall
